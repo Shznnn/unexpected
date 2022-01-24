@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="profil2.css">
+    <title>Shznnn</title>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="ring"></div>
+        <span class="loding">loading...</span>
+    </div>
+    <div class="bg">
+        <div class="sub-bg"></div>
+        <div class="navbar">
+            <ul>
+                <li class="list">
+                    <a href="../index.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../product/product.html">
+                        <span class="icon"><i class="fas fa-coffee"></i></span>
+                        <span class="text">Product</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../cart/cart.php">
+                        <span class="icon"><i class="fas fa-shopping-cart"></i></i></span>
+                        <span class="text">Cart</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="profil.html">
+                        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="foto">
+                <img src="../logo/ilmaaaaa.png" alt="">
+            </div>
+            <div class="sub-content">
+                <h1>Hi, I'am Ade Ilma Hasanah</h1>
+                <p>I'am a Front End Developer and UI Designer</p>
+            </div>
+            <div class="media-info">
+                <a href="https://api.whatsapp.com/send?phone=6285727442718&text=Hai%20Syaiful"><span><img
+                            src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" /></span></i> Whatsapp</a>
+                <a href="https://instagram.com/lesyouxdelilii"><span><img
+                            src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" /></span></i>
+                    Instagram</a>
+                <a href="https://github.com/Shznnn"><span><img
+                            src="https://img.icons8.com/material-outlined/96/000000/github.png" /></span></i> github</a>
+            </div>
+        </div>
+        <div class="skill">
+            <h1>Skills</h1>
+            <span class="level">
+                <p>My technical level</p>
+            </span>
+            <div class="skil-btn">
+                <span class="b1"><button onclick="web()">Web Programming</button></span>
+                <span class="b2"><button onclick="design()">Designer</button></span>
+            </div>
+            <div class="bar" id="pilihan1">
+                <div class="bar1">
+                    <P>HTML</P>
+                    <small>70%</small>
+                    <div class="sub-bar1"></div>
+                </div>
+                <div class="bar2">
+                    <p>CSS</p>
+                    <small>65%</small>
+                    <div class="sub-bar2"></div>
+                </div>
+                <div class="bar3">
+                    <p>Java Script</p>
+                    <small>35%</small>
+                    <div class="sub-bar3"></div>
+                </div>
+                <div class="bar4">
+                    <p>Bootstrap</p>
+                    <small>50%</small>
+                    <div class="sub-bar4"></div>
+                </div>
+            </div>
+            <div class="bar-a" id="pilihan2">
+                <div class="bar1-a">
+                    <P>figma</P>
+                    <small>90%</small>
+                    <div class="sub-bar1-a"></div>
+                </div>
+                <div class="bar2-a">
+                    <p>Photoshop</p>
+                    <small>70%</small>
+                    <div class="sub-bar2-a"></div>
+                </div>
+                <div class="bar3-a">
+                    <p> Lightroom</p>
+                    <small>60%</small>
+                    <div class="sub-bar3-a"></div>
+                </div>
+                <div class="bar4-a">
+                    <p>Corel Draw</p>
+                    <small>70%</small>
+                    <div class="sub-bar4-a"></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let spinnerWrapper = document.querySelector('.loader-wrapper');
+            var delay = 3000;
+
+            window.addEventListener('load', function () {
+                spinnerWrapper.style.display = 'none';
+            });
+        </script>
+        <script>
+            function web() {
+                document.getElementById("pilihan1").style.visibility = 'visible';
+                document.getElementById("pilihan2").style.visibility = 'hidden';
+
+            }
+        </script>
+        <script>
+            function design() {
+                document.getElementById("pilihan2").style.visibility = 'visible';
+                document.getElementById("pilihan1").style.visibility = 'hidden';
+
+            }
+        </script>
+</body>
+
+</html>

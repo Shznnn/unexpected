@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profil.css">
+    <title>profil</title>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="ring"></div>
+        <span class="loding">loading...</span>
+    </div>
+    <div class="bg" id="bg">
+        <div class="sub-bg"></div>
+        <div class="navbar">
+            <ul>
+                <li class="list">
+                    <a href="../index.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../product/product.html">
+                        <span class="icon"><i class="fas fa-coffee"></i></span>
+                        <span class="text">Product</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="../cart/cart.html">
+                        <span class="icon"><i class="fas fa-shopping-cart"></i></i></span>
+                        <span class="text">Cart</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="profil.html">
+                        <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+            <div class="content" id="content">
+                <div class="sub-content">
+                    <h1>Hi, We are Unexpected Team</h1>
+                    <p>We are UI Designer and WEB Developer</p>
+                </div>
+                <div class="foto">
+                    <img src="../logo/profil.png" alt="">
+                </div>
+                <div class="tmbol">
+                    <button onclick="popup()">ABOUT US</button>
+                </div>
+            </div>
+            <div class="pilihan" id="pilihan">
+                <h1>Whose profile do you want to see?</h1>
+                <div class="sub-pilihan">
+                   <span class="b1"> <button onclick="syaiful()">Syaiful ihsan</button></span>
+                    <span class="b2"><button onclick="ilma()">Ade Ilma hasanah</button></span>
+                </div>
+            </div>
+        
+    </div>
+    <script>
+        let spinnerWrapper = document.querySelector('.loader-wrapper');
+        var delay = 3000;
+
+        window.addEventListener('load', function () {
+            spinnerWrapper.style.display = 'none';
+        });
+    </script>
+    <script>
+        function popup() {
+            document.getElementById("pilihan").style.visibility = 'visible';
+            document.getElementById("content").style.filter = 'blur(5px)';
+        }
+    </script>
+    <script>
+        function syaiful() {
+            window.open("profil1.html");
+        }
+    </script>
+    <script>
+        function ilma() {
+            window.open("profil2.html");
+        }
+    </script>
+
+</body>
+</html>
